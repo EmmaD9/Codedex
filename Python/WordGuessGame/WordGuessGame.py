@@ -22,6 +22,7 @@ while attempts > 0:
       if '_' not in guessedWord:
         print('\nCongratulations!! You guessed the word: ' + word)
         break
-      else:
+      if attempts == 0:
         print('\nYou\'ve run out of attempts! The word was: ' + word)
+        break
 
